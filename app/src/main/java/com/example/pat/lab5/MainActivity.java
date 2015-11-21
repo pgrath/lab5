@@ -48,13 +48,14 @@ public class MainActivity extends AppCompatActivity {
         //set up edittext and textview
         TextView tv1 = (TextView) findViewById(R.id.textView);
         EditText et1 = (EditText) findViewById(R.id.etInput);
-        int[] grades = new int[1024];
+        int[] grades = new int[100];
         int count = 0;
         String file;
         //set up array obj to use
         ArrayUtil sorter = new ArrayUtil();
         //Get assetmanager to read files
         AssetManager assetManager = getAssets();
+
 
         file = et1.getText().toString();
 
@@ -69,13 +70,14 @@ public class MainActivity extends AppCompatActivity {
             fileScn.close();
         } catch (IOException e) {
             e.printStackTrace();
-            tv1.append("IO Error!!");
+            tv1.append("IO Error!!" + e );
         }
 
 
         sorter.sort(grades, grades.length);
-        for(int i=0; i<=grades.length;){
+        for(int i=0; i<=grades.length-1;){
             tv1.append(grades[i]+"\n");
+            i++;
 
         }
 
