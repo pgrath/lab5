@@ -80,6 +80,11 @@ public class MainActivity extends AppCompatActivity {
             i++;
 
         }
+        tv1.append("Max is" + grades[grades.length] + "\n");
+        tv1.append("Min is" + grades[-count] +"\n");
+
+        //geometric thing
+        tv1.append("");
 
 
     }
