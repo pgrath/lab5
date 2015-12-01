@@ -22,10 +22,9 @@
         android:layout_height="wrap_content"
         android:text="Run task"
         android:id="@+id/sortBtn"
-        android:layout_below="@+id/etInput"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="29dp"
-        android:onClick="arrayInfo"/>
+        android:onClick="arrayInfo"
+        android:layout_below="@+id/editTextOut"
+        android:layout_centerHorizontal="true" />
 
 
 
@@ -52,6 +51,16 @@
         android:layout_marginTop="44dp" />
 
     </ScrollView>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextOut"
+        android:layout_below="@+id/etInput"
+        android:layout_alignRight="@+id/etInput"
+        android:layout_alignEnd="@+id/etInput"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
 
 </RelativeLayout>
